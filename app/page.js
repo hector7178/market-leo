@@ -3,11 +3,8 @@ import Aros from './components/svgs/Aros'
 import HomeLogo from './components/svgs/HomeLogo'
 import Link from 'next/link'
 import Carousel from './components/carousel'
-import Netflix from './components/svgs/Netflix'
 import SwiperCard from './components/swiper'
 import Adornos from './components/Adornos'
-import Image from 'next/image'
-import Adornos2 from './components/Adornos2'
 
 export default function Home() {
   const promociones=[
@@ -98,7 +95,6 @@ export default function Home() {
         <div className='w-full md:w-1/2 h-[55vh] sm:h-[45vh] sm:h-[70vh]'>
           <SwiperCard data={promociones}/>
         </div>
-        <Adornos2/>
        
       </section>
       <section className='relative  w-full h-[75vh] sm:h-screen flex flex-col p-6 md:p-10 lg:p-20 gap-8 items-center' >
