@@ -7,11 +7,13 @@ import PromoIcon from './svgs/PromoIcon'
 import ContactIcon from './svgs/ContactIcon'
 import MenuIcon from './svgs/MenuIcon'
 import XIcon from './svgs/XIcon'
+import Image from 'next/image'
 
 function Navbar() {
     const [open,setOpen]=useState(true)
   return (
     <header className='h-[10vh] w-full flex align-end justify-end absolute z-20 '>
+        <Image src={'/logo.png'} alt='logo' width={100} height={100} className='absolute top-4 left-4 w-[150] h-[150]'></Image>
         <ul className='hidden md:flex flex-row gap-6 w-fit h-full p-6'>
             <li className=' hover:scale-105 opacity-70 hover:opacity-100'>
                 <Link href={'/'} className='flex flex-row gap-2 text-white '>

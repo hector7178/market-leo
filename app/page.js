@@ -14,39 +14,47 @@ export default function Home() {
     {
       servicio:'Promoción DISNEY + y START +',
       img:'promocionDyS.svg',
-      url:'disneyystar'
+      url:'disneyystar',
+      promo:true
 
     },
     {
       servicio:'Promoción HBO MAX y STAR +',
       img:'promocionHYS.svg',
-      url:'hboystar'
+      url:'hboystar',
+      promo:true
 
     },{
       servicio:'Promoción NETFLIX y AMAZON prime',
       img:'promocionNYA.svg',
-      url:'netflixyamazon'
+      url:'netflixyamazon',
+      promo:true
     },{
       servicio:'Promoción NETFLIX y DISNEY +',
       img:'promocionNYD.svg',
-      url:'netflixydisney'
+      url:'netflixydisney',
+      promo:true
 
     },{
       servicio:'Promoción NETFLIX y HBO MAX',
       img:'promocionNYH.svg',
-      url:'netflixyhbo'
+      url:'netflixyhbo',
+      promo:true
     },{
       servicio:'Promoción NETFLIX y PARAMOUNT',
       img:'promocionNYP.svg',
-      url:'netflixyparamount'
+      url:'netflixyparamount',
+      promo:true
     },{
       servicio:'Promoción NETFLIX y STAR +',
       img:'promocionNYS.svg',
-      url:'netflixystart'
+      url:'netflixystart',
+      promo:true
     }, {
       Servicio:'Super promo',
       img:'superpromo.svg',
-      url:'superpromo'
+      url:'superpromo',
+      promo:true
     },
   ]
   const reseñas=[
@@ -76,6 +84,55 @@ export default function Home() {
       reseña: "Me encanta el cine y por eso uso M&L para comprar cuentas de streaming de las mejores plataformas. Tienen una gran variedad de opciones y precios, y el servicio es muy rápido y confiable. No tengo ninguna queja."
     }
   ];
+  const servicio=[
+    {
+    servicio:'NETFLIX',
+    tiempo:'( 30 Días )',
+    img:'NETFLIX.svg',
+    promo:false,
+    precio:'Precio: 3,5$',
+    url:'NETFLIX'
+    },
+    {
+    servicio: 'MAGIS TV' ,
+    tiempo:'( 30 Días  )',
+    precio:'Precio: 4$',
+    img:'MAGISTV.svg',
+    promo:false,
+    url:'MAGISTV'
+    },
+    {
+    servicio: 'STAR +' ,
+    tiempo:'( 30 Días  )',
+    precio:'Precio: 1,50$',
+    img:'STAR.svg',
+    promo:false,
+    url:'STAR'
+    },
+    {
+    servicio: 'DISNEY +' ,
+    tiempo:' ( 30 Días  ) ',
+    precio:'Precio: 1,49$',
+    img:'DISNEY.svg',
+    promo:false,
+    url:'DISNEY'
+    },
+    {
+    servicio: 'AMAZON PRIME' ,
+    tiempo:'( 30 Días  )',
+    precio:'Precio: 1,90$',
+    img:'AMAZONPRIME.svg',
+    promo:false,
+    url:'AMAZONPRIME'
+    },{
+    servicio:'HBO MAX',
+    tiempo:'( 30 Días  )',
+    precio:'Precio: 1,90$',
+    img:'HBOMAX.svg',
+    promo:false,
+    url:'HBOMAX'
+    }   
+]
   
   return (
     <Suspense fallback={<Loader/>}>
@@ -98,6 +155,13 @@ export default function Home() {
         <h3 className='text-white text-3xl h-fit font-bold font-sans text-center'>PROMOCIONES</h3>
         <div className='w-full md:w-1/2 h-[55vh] sm:h-[45vh] sm:h-[70vh]'>
           <SwiperCard data={promociones}/>
+        </div>
+       
+      </section>
+      <section id={'promociones'} className='flex flex-col gap-10 relative overflow-hidden p-6 md:p-20 w-full items-center h-[75vh] sm:h-screen bg-cover bg-center ' >
+        <h3 className='text-white text-3xl h-fit font-bold font-sans text-center'>SERVICIOS</h3>
+        <div className='w-full md:w-1/2 h-[55vh] sm:h-[45vh] sm:h-[70vh]'>
+          <SwiperCard data={servicio}/>
         </div>
        
       </section>

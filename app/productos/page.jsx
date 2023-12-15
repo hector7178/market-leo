@@ -41,7 +41,7 @@ function page() {
   return (
     <main className="gap-4 scroll-smooth flex flex-col min-h-screen justify-center items-center  h-fit w-full  p-2 md:p-6 lg:p-12  bg-gradient-to-b from-black via-gray-500 to-black ">
         
-        <div className="w-full grid grid-col-5 mt-10">
+        <div className="w-full grid grid-col-5 mt-[140px]">
                 <h1 className="col-span-3 text-white font-bold text-2xl md:text-4xl font-sans">SERVICIOS</h1>
                 <div className="col-span-2 font-sans">
 
