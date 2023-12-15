@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react'
 
 import { scroll } from 'framer-motion'
 import Image from 'next/image'
-import Adornos2Svg from './svgs/adornos2'
 
 function Adornos() {
     const [dataScroll, setDataScroll]=useState()
