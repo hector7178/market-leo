@@ -34,7 +34,7 @@ export default function Carousel(prop) {
       >
        {prop?.data?.map((data, k)=>{
         return (<SwiperSlide key={k} className='p-6 lg:p-16 bg-zing-800 rounded-lg'>
-          <div className='w-full h-fit flex flex-col p-10 items-center gap-6 bg-zing-800 rounded-lg'>
+          <div className='w-full h-fit flex flex-col p-4 sm:p-10 items-center gap-2 sm:gap-6 bg-zing-800 rounded-lg'>
             <div className='w-16 h-16 md:w-20 md:h-20 overflow-hidden rounded-full border-2 border-[#ffd33c]'>
               <Image src={`/foto-perfil/${k+1}.jpg`} alt='foto perfil' width={100} height={100} className='w-16 h-16  md:w-20 md:h-20 bg-cover bg-center'></Image>
             </div>
