@@ -16,34 +16,34 @@ function page({ params }) {
         servicio: 'MAGIS TV ' ,
         tiempo:'( 30 Días  )',
         precio:'Precio: 4$',
-        src:'/MAGIS TV.svg',
+        src:'/MAGISTV.svg',
         URL:'MAGISTV'
         },
         {
         servicio: 'STAR +' ,
         tiempo:'( 30 Días  )',
         precio:'Precio: 1,50$',
-        src:'/STAR +.svg',
+        src:'/STAR.svg',
         URL:'STAR'
         },
         {
         servicio: 'DISNEY +' ,
         tiempo:' ( 30 Días  ) ',
         precio:'Precio: 1,49$',
-        src:'/DISNEY +.svg',
+        src:'/DISNEY.svg',
         URL:'DISNEY'
         },
         {
         servicio: 'AMAZON PRIME' ,
         tiempo:'( 30 Días  )',
         precio:'Precio: 1,90$',
-        src:'/AMAZON PRIME.svg',
+        src:'/AMAZONPRIME.svg',
         URL:'AMAZONPRIME'
         },{
         servicio:'HBO MAX',
         tiempo:'( 30 Días  )',
         precio:'Precio: 1,90$',
-        src:'/HBO MAX.svg',
+        src:'/HBOMAX.svg',
         URL:'HBOMAX'
         }, {
             servicio:'Promoción DISNEY + y START +',
@@ -123,7 +123,7 @@ function page({ params }) {
         <div className='w-full h-full bg-zinc-700 relative z-1 rounded-lg grid grid-cols-2'>
             <div className='w-full h-full p-6 flex justify-center'>
             {
-            found?.promo?
+            !found?.promo?
             <Image src={found.src} alt='img servicio' width={100} height={100} className='h-3/4 w-auto max-h-[400px]  rounded-lg'/>
             :
             <Image src={found.src} alt='img servicio' width={100} height={100} className='h-3/4 w-full max-h-[400px] rounded-lg'/>

@@ -7,7 +7,7 @@ function Card(prop) {
   return (
     <div className='col-span-1 row-span-2 w-full h-full flex flex-col p-2 rounded-lg bg-zinc-800'>
         <div className='w-full h-1/2 flex justify-center items-center'>
-            <Image src={`/${prop?.data?.servicio?.trim()}.svg`} className='w-full h-full' width={100} height={100}  alt='servicio'/>
+            <Image src={`/${prop?.data?.URL}.svg`} className='w-full h-full' width={100} height={100}  alt='servicio'/>
         </div>
         <div className='w-full h-1/2 flex flex-col gap-2 text-white p-2 items-center justify-center'>
             <span className='text-white font-bold  w-full text-left'> {prop?.data.servicio  }</span>

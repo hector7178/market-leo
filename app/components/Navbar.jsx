@@ -43,21 +43,21 @@ function Navbar() {
                 <XIcon className='w-8 h-8 text-white ' onClick={()=>setOpen(true)}/>
             </li>
         
-            <li className='flex flex-row gap-2 '>
-                <Link href={'/'} className='text-white'>Inicio</Link>
-                <HomeIcon className='text-white w-6 h-6'/>
+            <li className=' '>
+                <Link href={'/'} className='text-white  flex flex-row gap-2'>Inicio<HomeIcon className='text-white w-6 h-6'/></Link>
+                
             </li>
             <li className='flex flex-row gap-2 '>
-                <Link href={'/productos'} className='text-white'>Productos</Link>
-                <ShopIcon className='text-white w-6 h-6'/>
+                <Link href={'/productos'} className='text-white flex flex-row gap-2'>Productos<ShopIcon className='text-white w-6 h-6'/></Link>
+                
             </li>
             <li className='flex flex-row gap-2 '>
-                <Link href={'/#promociones'} className='text-white'>Promociones</Link>
-                <PromoIcon className='text-white w-6 h-6'/>
+                <Link href={'/#promociones'} className='text-white flex flex-row gap-2'>Promociones<PromoIcon className='text-white w-6 h-6'/></Link>
+                
             </li>
             <li className='flex flex-row gap-2 '>
-                <Link href={'/#contactanos'} className='text-white'>Contactanos</Link>
-                <ContactIcon className='text-white w-6 h-6'/>
+                <Link href={'/#contactanos'} className='text-white flex flex-row gap-2'>Contactanos<ContactIcon className='text-white w-6 h-6'/></Link>
+                
             </li>
         </ul>}
     </header>

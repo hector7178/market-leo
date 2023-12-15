@@ -1,12 +1,15 @@
 
 import Aros from './components/svgs/Aros'
-import HomeLogo from './components/svgs/HomeLogo'
 import Link from 'next/link'
 import Carousel from './components/carousel'
 import SwiperCard from './components/swiper'
 import Adornos from './components/Adornos'
+import { Suspense } from 'react'
+import Loader from './components/loader'
+import { lazy } from 'react';
 
 export default function Home() {
+  const HomeLogo = lazy(() => import('./components/svgs/HomeLogo'));
   const promociones=[
     {
       servicio:'Promoción DISNEY + y START +',
@@ -75,6 +78,7 @@ export default function Home() {
   ];
   
   return (
+    <Suspense fallback={<Loader/>}>
     <main className=" scroll-smooth flex min-h-screen h-fit w-full flex-col bg-gradient-to-b from-black via-gray-500 to-black ">
     
       <section className='grid items-center relative justify-items-center lg:grid-cols-2  w-full h-screen'>
@@ -148,5 +152,6 @@ export default function Home() {
         
       </footer>
     </main>
+    </Suspense>
   )
 }
