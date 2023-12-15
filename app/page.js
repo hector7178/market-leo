@@ -5,7 +5,7 @@ import Carousel from './components/carousel'
 import SwiperCard from './components/swiper'
 import Adornos from './components/Adornos'
 import { Suspense } from 'react'
-import Loader from './components/loader'
+import Loader from './components/Loader'
 import { lazy } from 'react';
 
 export default function Home() {
