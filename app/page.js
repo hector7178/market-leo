@@ -7,6 +7,7 @@ import Adornos from './components/Adornos'
 import { Suspense } from 'react'
 import Loader from './components/Loader'
 import { lazy } from 'react';
+import Image from 'next/image'
 
 export default function Home() {
   const HomeLogo = lazy(() => import('./components/svgs/HomeLogo'));
@@ -102,6 +103,14 @@ export default function Home() {
     url:'MAGISTV'
     },
     {
+      servicio: 'SPOTIFY' ,
+      tiempo:'( 3 MES  )',
+      precio:'Precio: 6$',
+      img:'SPOTIFY.svg',
+      promo:false,
+      url:'SPOTIFY'
+    },
+    {
     servicio: 'STAR +' ,
     tiempo:'( 30 Días  )',
     precio:'Precio: 1,50$',
@@ -172,30 +181,24 @@ export default function Home() {
         </div>
         
       </section>
-      <section id={'contactanos'}  className='grid relative  w-full h-[75vh] sm:h-screen flex flex-col gap-8 p-10 md:p-20 content-center  ' >
-        <h4  className='text-white text-2xl md:text-3xl font-bold font-sans w-full text-center'>CONTACTANOS</h4>
-        <div className='before:block before:absolute before:-inset-1 before:-skew-y-3 w-full md:w-3/4 lg:w-1/2 md:left-[12.5%] lg:left-1/4  before:bg-[#ffd33c]  relative inline-block'>
-          <div className='flex flex-col gap-8 p-6 rounded-lg items-center w-full bg-zinc-700 relative z-10'>
-            <p className='text-white text-center text-xs'>Si tienes alguna duda o sugerencia, puedes contactarnos a través de nuestro formulario de contacto. Estaremos encantados de atenderte y resolver tus inquietudes.</p>
-              <form className='flex flex-col gap-4 w-3/4 md:w-2/3 lg:w-2/3'>
-                <div className='flex flex-col gap-2'>
-                  <label className='text-white text-sm'>Nombre:</label>
-                  <input type='text' className='border-2  border-[#ffd33c] text-white bg-transparent rounded-lg text-sm'/>
-                </div>
-                <div className='flex flex-col gap-2'>
-                  <label className='text-white text-sm'>Correo:</label>
-                  <input type='text' className='border-2 border-[#ffd33c] text-white bg-transparent  rounded-lg text-sm'/>
-                </div>
-                <div className='flex flex-col gap-2'>
-                  <label className='text-white text-sm'>Mensaje:</label>
-                  <textarea type='text'  className='border-2 text-white border-[#ffd33c] bg-transparent rounded-lg text-sm'/>
-                </div>
-              </form>
-            <Link href={'/#'} className='text-[#ffd33c] p-2 w-fit h-fit text-sm font-bold border-[#ffd33c] border-b-4 hover:border-none hover:scale-105 bg-transparent hover:bg-[#ffd33c] hover:text-[#291504] hover:shadow-lg ease-in-out duration-300 rounded-lg px-6'>Enviar</Link>
-
+      <section id={'contactanos'} className='relative  w-full h-[50vh] flex flex-col p-2 gap-8 items-center bg-gradient-to-t from-zing-950 from-20% via-black to-zing-800 to-80%' >
+        <h4  className='text-white text-2xl md:text-3xl font-bold font-sans text-center w-full'>CONTACTANOS</h4>
+        <span className='text-white text-lg text-center'>Conoce más de nosotros y síguenos en nuestras redes sociales</span>
+          <div className='p-4 w-[80%] sm:w-3/4 h-1/2 grid grid-cols-3 gap-2 items-center justify-items-center'>
+            <Link className='w-3/4 flex flex-col items-center justify-center col-span-1 gap-2 hover:scale-105'  href={'/'}>
+              <Image src={'/redesSociales/whatsapp.svg'} className='' width={100} height={100} alt=''></Image>
+              <span className='text-[#ffd33c] '>whatsapp</span>
+            </Link>
+            <Link  className='w-3/4 flex flex-col items-center justify-center col-span-1 gap-2 hover:scale-105' href={'/'}>
+              <Image src={'/redesSociales/instagram.svg'} className='' width={100} height={100} alt=''></Image>
+              <span className='text-[#ffd33c] '>Instagram</span>
+            </Link>
+            <Link  className='w-3/4 flex flex-col items-center justify-center col-span-1 gap-2 hover:scale-105' href={'/'}>
+              <Image src={'/redesSociales/facebook.svg'} className='' width={100} height={100} alt=''></Image>
+              <span className='text-[#ffd33c] '>Facebook</span>
+            </Link> 
           </div>
-        </div>
-
+        
       </section>
       <footer className='h-[35vh] bg-zinc-800 w-full grid grid-cols-2 sm:grid-cols-4 p-6 relative'>
         <div className=' sm:col-span-1 px-10 p-4'>

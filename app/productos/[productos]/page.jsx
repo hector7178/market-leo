@@ -32,6 +32,12 @@ function page({ params }) {
         precio:'Precio: 1,49$',
         src:'/DISNEY.svg',
         URL:'DISNEY'
+        },{
+          servicio:'SPOTIFY',
+          tiempo:'( 3 meses  )',
+          precio:'Precio: 6$',
+          src:'/SPOTIFY.svg',
+          URL:'SPOTIFY'
         },
         {
         servicio: 'AMAZON PRIME' ,
@@ -119,7 +125,7 @@ function page({ params }) {
 <main className=" scroll-smooth min-h-screen grid  h-fit w-full px-10 py-16 md:py-8 md:px-6 lg:px-12 lg:py-12  bg-gradient-to-b from-black via-gray-500 to-black ">
 
 
-    <div className='mt-[100px] md:mt-0 hidden md:flex before:rounded-lg before:block before:absolute before:-inset-1 before:-skew-y-3 h-[75vh] top-[10vh] rounded-lg w-[80vw] left-[7vw]  before:bg-[#ffd33c]  relative inline-block'>
+    <div className='md:mt-0 mt-[100px] md:mt-0 hidden md:flex before:rounded-lg before:block before:absolute before:-inset-1 before:-skew-y-3 h-[75vh] top-[10vh] rounded-lg w-[80vw] left-[7vw]  before:bg-[#ffd33c]  relative inline-block'>
         <div className='w-full h-full bg-zinc-700 relative z-1 rounded-lg grid grid-cols-2'>
             <div className='w-full h-full p-6 flex justify-center'>
             {

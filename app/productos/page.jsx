@@ -25,6 +25,12 @@ function page() {
         tiempo:' ( 30 Días  ) ',
         precio:'Precio: 1,49$',
         URL:'DISNEY'
+        },{
+          servicio:'SPOTIFY',
+          tiempo:'( 3 meses  )',
+          precio:'Precio: 6$',
+          src:'/SPOTIFY.svg',
+          URL:'SPOTIFY'
         },
         {
         servicio: 'AMAZON PRIME' ,
