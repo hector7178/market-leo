@@ -185,12 +185,12 @@ export default function Home() {
         <h4  className='text-white text-2xl md:text-3xl font-bold font-sans text-center w-full'>CONTACTANOS</h4>
         <span className='text-white text-lg text-center'>Conoce más de nosotros y síguenos en nuestras redes sociales</span>
           <div className='p-4 w-[80%] sm:w-3/4 h-1/2 grid grid-cols-2 gap-2 items-center justify-items-center'>
-            <Link className='w-3/4 flex flex-col items-center justify-center col-span-1 gap-2 hover:scale-105'  href={'https://api.whatsapp.com/send/?phone=584127060194&text=Hola,%20Me%20gustaria%20conocer%20mas%20de%20su%20servicio&type=phone_number&app_absent=0'}>
+            <Link className='w-3/4 flex flex-col items-center justify-center col-span-1 gap-2 hover:scale-105 duration-300'  href={'https://api.whatsapp.com/send/?phone=584127060194&text=Hola,%20Me%20gustaria%20conocer%20mas%20de%20su%20servicio&type=phone_number&app_absent=0'}>
               <Image src={'/redesSociales/whatsapp.svg'} className='' width={100} height={100} alt=''></Image>
               <span className='text-[#ffd33c] '>Whatsapp</span>
             </Link>
           
-            <Link  className='w-3/4 flex flex-col items-center justify-center col-span-1 gap-2 hover:scale-105' href={'https://www.facebook.com/profile.php?id=100088886517762&mibextid=ZbWKwL'}>
+            <Link  className='w-3/4 flex flex-col items-center justify-center col-span-1 gap-2 hover:scale-105 duration-300' href={'https://www.facebook.com/profile.php?id=100088886517762&mibextid=ZbWKwL'}>
               <Image src={'/redesSociales/facebook.svg'} className='' width={100} height={100} alt=''></Image>
               <span className='text-[#ffd33c] '>Facebook</span>
             </Link> 
