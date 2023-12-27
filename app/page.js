@@ -190,7 +190,7 @@ export default function Home() {
               <span className='text-[#ffd33c] '>Whatsapp</span>
             </Link>
           
-            <Link  className='w-3/4 flex flex-col items-center justify-center col-span-1 gap-2 hover:scale-105 duration-300' href={'https://www.facebook.com/profile.php?id=100088886517762&mibextid=ZbWKwL'}>
+            <Link  className='w-3/4 flex flex-col items-center justify-center col-span-1 gap-2 hover:scale-105 duration-300' href={'https://www.facebook.com/profile.php?id=61555236712433&mibextid=ZbWKwL'}>
               <Image src={'/redesSociales/facebook.svg'} className='' width={100} height={100} alt=''></Image>
               <span className='text-[#ffd33c] '>Facebook</span>
             </Link> 
