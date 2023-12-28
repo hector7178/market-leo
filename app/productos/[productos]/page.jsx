@@ -22,7 +22,7 @@ function page({ params }) {
         {
         servicio: 'STAR +' ,
         tiempo:'( 30 Días  )',
-        precio:'Precio: 1,50$',
+        precio:'Precio: 0.95$',
         src:'/STAR.svg',
         URL:'STAR'
         },

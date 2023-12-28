@@ -113,7 +113,7 @@ export default function Home() {
     {
     servicio: 'STAR +' ,
     tiempo:'( 30 Días  )',
-    precio:'Precio: 1,50$',
+    precio:'Precio: 0.95$',
     img:'STAR.svg',
     promo:false,
     url:'STAR'
